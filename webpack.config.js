@@ -38,6 +38,7 @@ module.exports = {
     ]
     /* Advanced module configuration (click to show) */
   },
+  devtool: 'eval-source-map',
   devServer: {
     historyApiFallback: true, // true for index.html upon 404, object for multiple paths
     port: 3000,
