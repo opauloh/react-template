@@ -19,3 +19,13 @@ Template to Start a React Application with minimal configuration using Webpack a
 - html-webpack-plugin: This package is a plugins for our webpack package, and important to note that plugins runs after the modules of webpack resolves, we are using it to generate our index.html file (inside the dist folder when building for production) and applying a `
   <script src="[bundle_name].js"></script>` at our index.html file inside the app folder.
 - babel-loader: This package allows transpiling JavaScript files using Babel and webpack, its totally required since we will want to transpile JSX from Javascript Files for development with React.js.
+
+
+## Instalation
+- Install it quickly using degit:
+
+`degit github:opauloh/react-template react-calculator`
+
+If you don't have degit, install it first:
+
+`npm install -g degit`
