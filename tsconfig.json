@@ -8,16 +8,11 @@
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true
   },
   "declaration": true,
-  "include": [
-    "src/**/*",
-    "@types"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*", "@types"],
+  "exclude": ["node_modules"]
 }
