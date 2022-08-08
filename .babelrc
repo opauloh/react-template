@@ -4,15 +4,13 @@
       "@babel/preset-env",
       {
         "targets": {
-          "node": "10"
+          "node": "16"
         }
-      }
+      },
     ],
-    [
-      "@babel/preset-react",
-      {
-        "runtime": "automatic"
-      }
-    ]
+    ["@babel/preset-react", {
+      "runtime": "automatic"
+    }],
+    "@babel/preset-typescript"
   ]
 }
