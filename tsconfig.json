@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "declaration": true,
+  "include": [
+    "src/**/*",
+    "@types"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

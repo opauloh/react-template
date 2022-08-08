@@ -3,7 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-  entry: './src/index.js',
+  entry: './src/index.tsx', // string | object | array
+  // Here the application starts executing
+  // and webpack starts bundling
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js',
@@ -31,7 +33,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|ts|jsx|tsx)$/,
         exclude: /(node_modules)/,
         use: 'babel-loader'
       }
@@ -42,8 +44,8 @@ module.exports = {
   devServer: {
     historyApiFallback: true, // true for index.html upon 404, object for multiple paths
     port: 3000,
-    onListening: function (server) {
-      const port = server.listeningApp.address().port;
+    onListening: function (devServer) {
+      const port = devServer.server.address().port;
       console.log('Listening on port:', port);
     }, //Provides an option to execute a custom function when webpack-dev-server starts listening for connections on a port.
     open: true // Tells dev-server to open the browser after server had been started. Set it to true to open your default browser.
